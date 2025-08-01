@@ -1,0 +1,11 @@
+All Templates have been removed for data privacy, if you want to make your own templates, follow this guide below:
+
+Template Creation Guide for Document Filler App
+
+The Document Filler App automatically fills templates using data from an Excel file with matching keys. Here's how to create them:
+
+- **Word Templates**: Use Microsoft Word to add bookmarks or content controls. For data insertion, enclose keys in double curly braces, e.g., {{Client_Name}} or {{Date}}. The app will replace these with corresponding Excel values.
+
+- **PDF Templates**: Create PDFs with interactive form fields using tools like Adobe Acrobat. Name fields to match Excel keys (e.g., "Client_Name", "CheckBox1"). The app will fill these fields with the same keys from your Excel data, supporting text, checkboxes (set with "1" or "0"), and choice fields (e.g., dropdowns with option values).
+
+Keep field names consistent with Excel keys, test with sample data, and ensure PDFtk is set up for PDFs. Refer to the log (`~/Documents/document_filler.log`) for debugging.
